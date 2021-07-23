@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Felipe Janes">
+    <meta name="description" content="Site dedicado ao calculo de um churrasco considerando o número de pessoas">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Cálculo churrasco</title>
+    <link rel="stylesheet" href="calculochurrasco.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo do churrasco</h1>
+        <nav>
+            <a href="calculoteste.html" target="_self" rel="prev">🏠</a>
+            <a href="calculochurrasco.html" target="_self" rel="next">📝</a>
+            <a href="calculopessoas.html" target="_self" rel="next">👥</a>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="numPessoas">Quantidade de pessoas:</label> 
+                <input type='number' id='numPessoas' autofocus>
+            </p>
+            <p>
+                <label for="inHoras">Quantidade de horas:</label> 
+                <input type="number" id="inHoras">
+            </p>
+            <p id='botoes'>
+                <button onclick="calcular()">Calcular</button>
+            </p>
+        </div>
+        <pre id='outChurrasco'></pre>
+        <a id='voltar' href="calculoteste.html" target="_self" rel="prev">Voltar</a>
+    </section>
+    <footer>
+        <p>&copy; DESAR Produções</p>
+    </footer>
+    <script src="calculopessoa.js"></script>
+</body>
+</html>
